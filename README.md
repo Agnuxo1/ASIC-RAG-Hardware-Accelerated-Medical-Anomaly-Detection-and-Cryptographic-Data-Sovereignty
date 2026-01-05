@@ -1,4 +1,5 @@
-![1](https://github.com/user-attachments/assets/8e95f8ff-4089-4980-a47e-99b51f2eaeab)
+<img width="2880" height="1620" alt="1" src="https://github.com/user-attachments/assets/09919568-e101-4dbc-b01c-648c712868eb" />
+
 # ASIC-RAG: Hardware-Accelerated Medical Anomaly Detection and Cryptographic Data Sovereignty
 
 This repository contains the full codebase for the **ASIC-RAG-CHIMERA** framework, focusing on medical anomaly detection (Pneumonia) using hybrid ASIC-CNN architectures.
