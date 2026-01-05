@@ -31,3 +31,18 @@ This system is designed to interface with **Lucky Miner LV06 (BM1366 ASIC)** for
 
 ## Author
 Francisco Angulo de Lafuente
+
+![1](https://github.com/user-attachments/assets/8e95f8ff-4089-4980-a47e-99b51f2eaeab)
+![2](https://github.com/user-attachments/assets/1372e232-0c0e-4d5a-a29a-269eff2dbb42)
+![3](https://github.com/user-attachments/assets/8a7869ea-af25-4424-bbd0-d99443bd30cd)
+![4](https://github.com/user-attachments/assets/82f72aed-5c93-4a97-9a35-6659739a885d)
+![5](https://github.com/user-attachments/assets/cbf1084c-bc95-4383-b5a5-e0928f1228e9)
+![6](https://github.com/user-attachments/assets/f46c0adf-1b43-4479-a51f-36f2354c0472)
+![7](https://github.com/user-attachments/assets/1b7392b9-06cf-418a-b83d-db8477f23c37)
+![8](https://github.com/user-attachments/assets/c3af2f30-b38e-41e2-a855-401d7e29f7e7)
+![9](https://github.com/user-attachments/assets/4ec37d32-42a4-434a-81cc-d9d03c481f45)
+![10](https://github.com/user-attachments/assets/115e4377-8552-446a-b3c5-e6cd648962f4)
+![11](https://github.com/user-attachments/assets/ba3092c8-017d-4002-b34e-89d871592914)
+![12](https://github.com/user-attachments/assets/e2d49a87-ce10-4661-ad0d-be810fc0ae9a)
+
+
