@@ -1,3 +1,4 @@
+![1](https://github.com/user-attachments/assets/8e95f8ff-4089-4980-a47e-99b51f2eaeab)
 # ASIC-RAG: Hardware-Accelerated Medical Anomaly Detection and Cryptographic Data Sovereignty
 
 This repository contains the full codebase for the **ASIC-RAG-CHIMERA** framework, focusing on medical anomaly detection (Pneumonia) using hybrid ASIC-CNN architectures.
@@ -32,7 +33,6 @@ This system is designed to interface with **Lucky Miner LV06 (BM1366 ASIC)** for
 ## Author
 Francisco Angulo de Lafuente
 
-![1](https://github.com/user-attachments/assets/8e95f8ff-4089-4980-a47e-99b51f2eaeab)
 ![2](https://github.com/user-attachments/assets/1372e232-0c0e-4d5a-a29a-269eff2dbb42)
 ![3](https://github.com/user-attachments/assets/8a7869ea-af25-4424-bbd0-d99443bd30cd)
 ![4](https://github.com/user-attachments/assets/82f72aed-5c93-4a97-9a35-6659739a885d)
