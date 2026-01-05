@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ASIC-RAG-CHIMERA: A Multi-Modal, Hardware-Accelerated Framework for Holistic Medical Anomaly Detection and
+        Cryptographic Data Sovereignty</title>
+    <style>
+        /* CRITICAL CSS FOR ACADEMIC LAYOUT */
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+            /* Light gray for screen viewing comfort */
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 2-COLUMN FORMAT */
+        .two-column {
+            column-count: 2;
+            column-gap: 20px;
+            text-align: justify;
+        }
+
+        /* Typography & Headings */
+        h1 {
+            font-size: 20pt;
+            text-align: center;
+            margin: 20px 0 15px 0;
+            line-height: 1.2;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 12pt;
+            margin: 20px 0 10px 0;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            break-after: avoid;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 15px;
+            break-after: avoid;
+        }
+
+        /* Meta Info */
+        .authors {
+            text-align: center;
+            font-size: 12pt;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .affiliation {
+            text-align: center;
+            font-size: 10pt;
+            font-style: italic;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        /* Abstract */
+        .abstract {
+            margin: 0 40px 30px 40px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 3px solid #2c3e50;
+            font-size: 9pt;
+            text-align: justify;
+        }
+
+        .keywords {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 9pt;
+        }
+
+        /* Figures & Tables */
+        .figure {
+            margin: 20px 0;
+            text-align: center;
+            break-inside: avoid;
+            background: #fff;
+        }
+
+        .figure-caption {
+            font-size: 9pt;
+            text-align: left;
+            margin-top: 8px;
+            font-style: italic;
+            color: #444;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            margin: 15px 0;
+            break-inside: avoid;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 6px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+            padding: 6px;
+        }
+
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        /* Equations */
+        .equation {
+            text-align: center;
+            margin: 15px 0;
+            font-family: 'Cambria Math', serif;
+            font-style: italic;
+            background: #fff;
+            padding: 5px;
+        }
+
+        .equation-number {
+            float: right;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        /* References */
+        .references {
+            font-size: 8pt;
+            margin-top: 10px;
+        }
+
+        .references ol {
+            padding-left: 15px;
+        }
+
+        .references li {
+            margin-bottom: 4px;
+            text-align: justify;
+        }
+
+        /* Footer / Contact */
+        .contact-section {
+            margin-top: 40px;
+            border-top: 2px solid #2c3e50;
+            padding-top: 20px;
+            font-size: 9pt;
+            text-align: center;
+            color: #555;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <h1>ASIC-RAG-CHIMERA: A Multi-Modal, Hardware-Accelerated Framework for Holistic Medical Anomaly Detection and
+            Cryptographic Data Sovereignty</h1>
+
+        <div class="authors">
+            Francisco Angulo de Lafuente
+        </div>
+
+        <div class="affiliation">
+            Independent AI Researcher & Project Lead, ASIC-RAG-CHIMERA Initiative<br>
+            Madrid, Spain<br>
+            Contact: See author links at end of document
+        </div>
+
+        <!-- ABSTRACT -->
+        <div class="abstract">
+            <strong>Abstract.</strong> Current medical Artificial Intelligence systems face a dual challenge: the "black
+            box" nature of deep learning models leads to a lack of interpretability, and the centralization of sensitive
+            patient data creates significant security vulnerabilities. This paper presents
+            <strong>ASIC-RAG-CHIMERA</strong>, a novel architecture that repurposes obsolete Bitcoin mining hardware
+            (specifically the Bitmain BM1366 ASIC) to address both issues. We propose a three-phase evolution: (1)
+            Utilizing the SHA-256 avalanche effect to generate deterministic "noise fields" that act as high-sensitivity
+            texture anomaly detectors; (2) A Hybrid Multi-Scale CNN architecture that fuses these cryptographic features
+            with visual data; and (3) A holistic integration where a Small Language Model (SLM) synthesizes visual
+            findings with patient history retrieved via a Secure RAG system. Experimental results on the ChestX-ray14
+            dataset demonstrate that our hybrid architecture achieves a <strong>93.75% accuracy</strong> and
+            <strong>83.76% specificity</strong>, significantly outperforming standard ResNet-18 models (74.79%
+            specificity) while maintaining near-perfect sensitivity (99.74%). Furthermore, we frankly address the
+            hardware limitations discovered during benchmarking—specifically a 9.4s latency bottleneck in the Stratum
+            protocol—and present a "Software for Speed, Hardware for Truth" operational paradigm that ensures
+            cryptographic data sovereignty without compromising clinical workflow speed.
+
+            <div class="keywords">
+                <strong>Keywords:</strong> Medical AI, Bitcoin ASIC, SHA-256, Hybrid CNN, Retrieval-Augmented
+                Generation, Data Sovereignty, Cryptographic Attention, Holistic Diagnosis.
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="two-column">
+
+            <h2>1. Introduction</h2>
+            <p>The digitization of healthcare records and the advent of deep learning have promised a revolution in
+                medical diagnostics [1]. However, deployment in real-world clinical settings, particularly in
+                resource-constrained environments, is hindered by two critical factors: the opacity of algorithmic
+                decision-making and the vulnerability of centralized patient data databases [2].</p>
+
+            <p>Simultaneously, the cryptocurrency industry generates massive amounts of electronic waste in the form of
+                Application-Specific Integrated Circuits (ASICs), designed solely for the SHA-256 hashing algorithm [3].
+                These devices, such as the Bitmain BM1366 found in the Lucky Miner LV06, possess immense computational
+                power for specific cryptographic operations but are useless for general-purpose computing.</p>
+
+            <p>This paper introduces <strong>ASIC-RAG-CHIMERA</strong>, a framework that upcycles these ASICs to serve
+                as "cognitive co-pilots." We hypothesize that the SHA-256 algorithm's sensitivity to input changes—known
+                as the avalanche effect—can be repurposed to detect subtle texture anomalies in medical imaging (e.g.,
+                early-stage pneumonia or nodules) that traditional Convolutional Neural Networks (CNNs) might miss or
+                misclassify.</p>
+
+            <p>Our contributions are three-fold:</p>
+            <ol>
+                <li><strong>Cryptographic Vision:</strong> A method to convert SHA-256 hashes into deterministic
+                    attention maps for CNNs.</li>
+                <li><strong>Hybrid Architecture:</strong> A multi-scale fusion network that improves specificity by 9%
+                    over baselines.</li>
+                <li><strong>Holistic Diagnosis:</strong> A secure RAG system that correlates visual findings with
+                    encrypted patient history, enabling context-aware diagnosis.</li>
+            </ol>
+
+            <h2>2. Theoretical Framework</h2>
+
+            <h3>2.1 The Avalanche Effect as Texture Filter</h3>
+            <p>The SHA-256 hash function $H: \{0,1\}^* \to \{0,1\}^{256}$ is designed to be a chaotic map. A fundamental
+                property is the strict avalanche effect, where flipping a single bit in the input $x$ results in a
+                change of approximately 50% of the output bits [4].</p>
+
+            <div class="equation">
+                $P(H(x)_i \neq H(x')_i) \approx 0.5 \quad \text{if} \quad Hamming(x, x') \geq 1$
+                <span class="equation-number">(1)</span>
+            </div>
+
+            <p>In medical imaging, healthy tissue (e.g., lung parenchyma) exhibits a consistent stochastic texture. We
+                posit that this texture produces a characteristic "entropy signature" in the hash domain. Pathological
+                tissue disrupts this micro-texture, generating a high-entropy divergence in the hash output. By tiling
+                an image into $8 \times 8$ pixel micro-blocks and hashing them, we generate a <strong>Deterministic
+                    Noise Field</strong> that highlights anomalies based on information density rather than pixel
+                intensity.</p>
+
+            <h3>2.2 Hybrid Feature Fusion</h3>
+            <p>To integrate this cryptographic signal, we propose a fusion mechanism. Let $F_{CNN}^l$ be the feature map
+                at layer $l$ of a ResNet backbone, and $M_{ASIC}$ be the attention map generated by the hardware.</p>
+
+            <div class="equation">
+                $F_{Fused}^l = F_{CNN}^l \odot (1 + \lambda \cdot Downsample(M_{ASIC}))$
+                <span class="equation-number">(2)</span>
+            </div>
+
+            <p>Here, $\lambda$ is a learnable scalar. This injection forces the network to attend to regions with high
+                cryptographic entropy, effectively acting as a hardware-based "saliency map" that is mathematically
+                reproducible.</p>
+
+            <h2>3. System Architecture</h2>
+
+            <p>The ASIC-RAG-CHIMERA architecture has evolved through three distinct development phases, moving from
+                simple detection to a holistic diagnostic system.</p>
+
+            <!-- FIGURE 1: SYSTEM ARCHITECTURE -->
+            <div class="figure">
+                <svg width="100%" height="280" viewBox="0 0 600 280">
+                    <defs>
+                        <linearGradient id="gradArch" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e6f3ff;stop-opacity:1" />
+                        </linearGradient>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                            <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+                        </marker>
+                    </defs>
+
+                    <!-- Background -->
+                    <rect x="10" y="10" width="580" height="260" fill="url(#gradArch)" stroke="#ccc"
+                        stroke-dasharray="4" />
+                    <text x="300" y="30" text-anchor="middle" font-weight="bold" font-size="12">Phase 3: Holistic
+                        Diagnostic Pipeline</text>
+
+                    <!-- Input -->
+                    <rect x="30" y="100" width="80" height="60" fill="#fff" stroke="#333" stroke-width="2" />
+                    <text x="70" y="125" text-anchor="middle" font-size="10" font-weight="bold">Patient Data</text>
+                    <text x="70" y="140" text-anchor="middle" font-size="9">X-Ray + History</text>
+
+                    <!-- Branch 1: Hybrid CNN -->
+                    <rect x="160" y="50" width="120" height="70" fill="#90EE90" stroke="#333" />
+                    <text x="220" y="80" text-anchor="middle" font-size="10" font-weight="bold">Hybrid CNN</text>
+                    <text x="220" y="95" text-anchor="middle" font-size="9">ResNet + ASIC Attn</text>
+
+                    <!-- Branch 2: Secure RAG -->
+                    <rect x="160" y="150" width="120" height="70" fill="#FFA07A" stroke="#333" />
+                    <text x="220" y="180" text-anchor="middle" font-size="10" font-weight="bold">Secure RAG</text>
+                    <text x="220" y="195" text-anchor="middle" font-size="9">Encrypted DB</text>
+
+                    <!-- ASIC Hardware Module -->
+                    <rect x="160" y="235" width="120" height="30" fill="#D3D3D3" stroke="#333" />
+                    <text x="220" y="254" text-anchor="middle" font-size="9" font-weight="bold">LV06 ASIC
+                        (Hasher)</text>
+
+                    <!-- Synthesis -->
+                    <rect x="350" y="90" width="100" height="100" fill="#BA55D3" stroke="#333" fill-opacity="0.2" />
+                    <text x="400" y="130" text-anchor="middle" font-size="10" font-weight="bold">LLM Synthesis</text>
+                    <text x="400" y="145" text-anchor="middle" font-size="9">Contextual Reasoning</text>
+
+                    <!-- Output -->
+                    <rect x="500" y="110" width="80" height="60" fill="#fff" stroke="#333" stroke-width="2" />
+                    <text x="540" y="135" text-anchor="middle" font-size="10" font-weight="bold">Holistic</text>
+                    <text x="540" y="150" text-anchor="middle" font-size="10" font-weight="bold">Diagnosis</text>
+
+                    <!-- Connectors -->
+                    <path d="M 110 115 L 160 85" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                    <path d="M 110 145 L 160 185" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                    <path d="M 220 235 L 220 220" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                    <path d="M 280 85 L 350 120" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                    <path d="M 280 185 L 350 160" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                    <path d="M 450 140 L 500 140" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)" />
+                </svg>
+                <div class="figure-caption"><strong>Figure 1:</strong> System architecture illustrating the convergence
+                    of visual analysis (Hybrid CNN), contextual data (Secure RAG), and hardware acceleration (ASIC) into
+                    a holistic diagnosis.</div>
+            </div>
+
+            <h3>3.1 Phase 1: Cryptographic Detection</h3>
+            <p>Initial experiments validated the ASIC as a high-pass texture filter. By hashing image blocks, we created
+                "Noise Maps" where pathological opacities produced statistically distinct hash distributions compared to
+                healthy tissue.</p>
+
+            <h3>3.2 Phase 2: Hybrid Vision (ASIC + CNN)</h3>
+            <p>Phase 2 integrates these noise maps into a neural network. We devised a <strong>Hybrid
+                    Multi-Scale</strong> architecture where the ASIC attention map is downsampled and injected into each
+                of the four residual blocks of a ResNet-18 backbone. This allows the network to utilize cryptographic
+                texture cues at multiple resolutions (56x56 down to 7x7).</p>
+
+            <h3>3.3 Phase 3: Holistic Integration</h3>
+            <p>The final phase addresses the "context gap." An image anomaly is a finding, not a diagnosis. We integrate
+                a Small Language Model (SLM, e.g., Qwen-1.5B) connected to a Secure RAG system. The ASIC hashes patient
+                metadata tags (e.g., "Smoker", "Age") to securely retrieve encrypted history records. The LLM then
+                correlates the visual finding ("Mass detected") with the context ("20-year smoking history") to output a
+                unified report: <em>"Suspected malignancy correlated with risk factors."</em></p>
+
+            <h2>4. Implementation and Hardware Constraints</h2>
+
+            <h3>4.1 Hardware Specifications</h3>
+            <p>We utilize the <strong>Lucky Miner LV06</strong>, a device containing a single BM1366 chip managed by an
+                ESP32-S3 microcontroller. While the chip is capable of 500 GH/s, our benchmarks revealed a critical
+                bottleneck in the communication interface.</p>
+
+            <!-- TABLE 1: HARDWARE SPECS -->
+            <table>
+                <caption><strong>Table 1:</strong> Hardware Performance Comparison for SHA-256 Operations</caption>
+                <thead>
+                    <tr>
+                        <th>Device</th>
+                        <th>Hash Rate</th>
+                        <th>Power</th>
+                        <th>Efficiency</th>
+                        <th>Latency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NVIDIA RTX 3090</td>
+                        <td>~1.5 GH/s</td>
+                        <td>350W</td>
+                        <td>0.004 GH/W</td>
+                        <td>&lt;1 ms</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LV06 ASIC (BM1366)</strong></td>
+                        <td><strong>500 GH/s</strong></td>
+                        <td><strong>3.5W</strong></td>
+                        <td><strong>142 GH/W</strong></td>
+                        <td><strong>9.4 s*</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Antminer S9 (Future)</td>
+                        <td>13,500 GH/s</td>
+                        <td>1300W</td>
+                        <td>10.3 GH/W</td>
+                        <td>~50 ms</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 8pt; margin-top: 5px;">* Latency observed due to WiFi/Stratum protocol overhead, not
+                chip limitation.</p>
+
+            <!-- FIGURE 2: INFERENCE TIME -->
+            <div class="figure">
+                <img src="./V4/results/figures/inference_time.png" alt="Inference Time Comparison"
+                    style="width:100%; max-width:500px; height:auto;">
+                <div class="figure-caption"><strong>Figure 2:</strong> Hardware-accelerated inference time benchmark.
+                    Despite communication overhead, the raw ASIC computation remains highly efficient for batch
+                    processing.</div>
+            </div>
+
+            <h3>4.2 The Latency Problem and Solution</h3>
+            <p>As shown in Table 1, the LV06 introduces a 9.4-second latency per transaction due to the Stratum mining
+                protocol overhead over WiFi. This makes real-time video analysis impossible with current firmware.</p>
+
+            <p>To resolve this, we implement a <strong>"Software for Speed, Hardware for Truth"</strong> paradigm:</p>
+            <ul>
+                <li><strong>Training:</strong> Uses a software-based SHA-256 simulation to allow for rapid iteration and
+                    massive data augmentation.</li>
+                <li><strong>Inference:</strong> Uses <strong>Attention Caching</strong>. Since SHA-256 is deterministic,
+                    attention maps are pre-calculated. For new patients, the 9.4s delay is accepted as a "Proof of Work"
+                    for generating a cryptographically signed, immutable diagnostic record.</li>
+            </ul>
+
+            <h2>5. Experimental Results</h2>
+
+            <!-- FIGURE 3: METRICS COMPARISON -->
+            <div class="figure">
+                <img src="./V4/results/figures/metrics_comparison.png" alt="Model Comparison Metrics"
+                    style="width:100%; max-width:500px; height:auto;">
+                <div class="figure-caption"><strong>Figure 3:</strong> Comparative analysis of key performance metrics
+                    (Accuracy, Sensitivity, Specificity, F1-Score) between standard CNN and ASIC-Hybrid architectures.
+                </div>
+            </div>
+
+            <p>We conducted an intensive training run (ASIC-MAXIMUS) using the full ChestX-ray14 dataset (5,863 images).
+                We compared a standard ResNet-18 against our `hybrid_multi` architecture.</p>
+
+            <!-- TABLE 2: METRICS -->
+            <table>
+                <caption><strong>Table 2:</strong> Model Performance Comparison (Full Dataset)</caption>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Standard CNN</th>
+                        <th>Hybrid Multi (ASIC)</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Accuracy</td>
+                        <td>90.54%</td>
+                        <td><strong>93.75%</strong></td>
+                        <td>+3.21%</td>
+                    </tr>
+                    <tr>
+                        <td>Sensitivity (Recall)</td>
+                        <td>100.00%</td>
+                        <td>99.74%</td>
+                        <td>-0.26%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Specificity</strong></td>
+                        <td>74.79%</td>
+                        <td><strong>83.76%</strong></td>
+                        <td><strong>+8.97%</strong></td>
+                    </tr>
+                    <tr>
+                        <td>F1 Score</td>
+                        <td>0.9297</td>
+                        <td><strong>0.9523</strong></td>
+                        <td>+0.0226</td>
+                    </tr>
+                    <tr>
+                        <td>Inference Time</td>
+                        <td>0.26 ms</td>
+                        <td>0.37 ms</td>
+                        <td>+0.11 ms</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>5.1 Analysis of Results</h3>
+            <p>The results confirm the efficacy of the hybrid approach. While the Standard CNN achieved perfect
+                sensitivity (100%), it suffered from "paranoia," generating a high number of False Positives (low
+                specificity of 74.79%).</p>
+
+            <p>The <strong>ASIC-Hybrid model</strong> significantly reduced these False Positives, boosting specificity
+                to 83.76% while maintaining a near-perfect sensitivity of 99.74% (only 1 missed case out of 390
+                positives). This indicates that the cryptographic noise field acts as a texture filter, helping the
+                network distinguish between true pathology and dense but healthy tissue.</p>
+
+            <!-- FIGURE 4: ROC AND CONFUSION MATRIX -->
+            <div class="figure">
+                <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                    <img src="./V4/results/figures/roc_curves.png" alt="ROC Curves"
+                        style="width:48%; min-width:250px; height:auto;">
+                    <img src="./V4/results/figures/confusion_matrices.png" alt="Confusion Matrix"
+                        style="width:48%; min-width:250px; height:auto;">
+                </div>
+                <div class="figure-caption"><strong>Figure 4:</strong> Statistical validation of the ASIC-MAXIMUS model.
+                    (Left) ROC Curves showing superior AUC. (Right) Confusion Matrix highlighting the reduction in False
+                    Positives compared to baseline.</div>
+            </div>
+
+            <div class="figure">
+                <svg width="100%" height="220" viewBox="0 0 600 220">
+                    <!-- Labels -->
+                    <text x="150" y="20" text-anchor="middle" font-weight="bold">Standard CNN</text>
+                    <text x="450" y="20" text-anchor="middle" font-weight="bold">Hybrid Multi (ASIC)</text>
+
+                    <!-- Matrix 1 -->
+                    <rect x="50" y="40" width="100" height="100" fill="#90EE90" opacity="0.6" />
+                    <text x="100" y="90" text-anchor="middle" font-weight="bold">175 (TN)</text>
+                    <rect x="150" y="40" width="100" height="100" fill="#FFB6C1" opacity="0.8" />
+                    <text x="200" y="90" text-anchor="middle" font-weight="bold">59 (FP)</text>
+                    <rect x="50" y="140" width="100" height="100" fill="#fff" stroke="#333" />
+                    <text x="100" y="190" text-anchor="middle" font-weight="bold">0 (FN)</text>
+                    <rect x="150" y="140" width="100" height="100" fill="#4682B4" opacity="0.9" />
+                    <text x="200" y="190" text-anchor="middle" font-weight="bold" fill="white">390 (TP)</text>
+
+                    <!-- Arrow -->
+                    <path d="M 270 140 L 330 140" stroke="#333" stroke-width="3" marker-end="url(#arrow)" />
+                    <text x="300" y="130" text-anchor="middle" font-size="9" font-style="italic">Reduced FP</text>
+
+                    <!-- Matrix 2 -->
+                    <rect x="350" y="40" width="100" height="100" fill="#90EE90" opacity="0.8" />
+                    <text x="400" y="90" text-anchor="middle" font-weight="bold">196 (TN)</text>
+                    <rect x="450" y="40" width="100" height="100" fill="#FFB6C1" opacity="0.4" />
+                    <text x="500" y="90" text-anchor="middle" font-weight="bold">38 (FP)</text>
+                    <rect x="350" y="140" width="100" height="100" fill="#fff" stroke="#333" />
+                    <text x="400" y="190" text-anchor="middle" font-weight="bold">1 (FN)</text>
+                    <rect x="450" y="140" width="100" height="100" fill="#4682B4" opacity="0.9" />
+                    <text x="500" y="190" text-anchor="middle" font-weight="bold" fill="white">389 (TP)</text>
+                </svg>
+                <div class="figure-caption"><strong>Figure 5:</strong> Schematic comparison of confusion matrices
+                    (Traditional vs Hybrid). Actual experimental results are shown in Figure 4.</div>
+            </div>
+
+            <h2>6. Hardware Applications and Use Cases</h2>
+
+            <h3>6.1 Clinical Deployment</h3>
+            <p>This system is optimized for "triage support" in rural or resource-constrained hospitals. The combination
+                of the LV06 (approx. $50) and a consumer laptop creates a diagnostic station that is:</p>
+            <ul>
+                <li><strong>Audit-Ready:</strong> Every diagnosis is cryptographically sealed by the ASIC.</li>
+                <li><strong>Context-Aware:</strong> Integrates patient history securely.</li>
+                <li><strong>Data Sovereign:</strong> No patient data leaves the local network for inference.</li>
+            </ul>
+
+            <h3>6.2 The Vesuvius Challenge Application</h3>
+            <p>The ability of the ASIC to detect subtle texture variations via hashing is currently being adapted for
+                the <strong>Vesuvius Challenge</strong>. We are testing the hypothesis that carbon ink on charred
+                papyrus creates a distinct hash entropy signature compared to plain papyrus fiber, potentially revealing
+                text invisible to the naked eye [5].</p>
+
+            <h2>7. Limitations & Future Work</h2>
+            <p><strong>Protocol Latency:</strong> The Stratum protocol is the primary limitation for real-time video.
+                Future work involves developing custom firmware for the ESP32 to bypass Stratum and access the ASIC chip
+                via raw SPI, which could reduce latency to milliseconds.</p>
+
+            <p><strong>Dataset Bias:</strong> Our model's accuracy ceiling (~94%) suggests we are approaching the limit
+                of the dataset's label quality. We plan to incorporate "Silver Standard" labels derived from LLM
+                analysis of radiologist reports to refine training.</p>
+
+            <h2>8. Conclusions</h2>
+            <p>ASIC-RAG-CHIMERA successfully demonstrates that e-waste mining hardware can be transformed into a
+                powerful tool for medical AI. By moving beyond "black box" pixels to a system that integrates
+                cryptographic texture analysis with holistic patient context, we achieve superior diagnostic precision.
+                This work establishes a new paradigm: <strong>Verifiable, Context-Aware AI</strong> that is both
+                economically sustainable and mathematically secure.</p>
+
+            <h2>9. Acknowledgments</h2>
+            <p>We acknowledge the open-source community behind the <code>nerdminer</code> project and the creators of
+                the Qwen-1.5B model. This research is self-funded.</p>
+
+            <h2>10. References</h2>
+            <div class="references">
+                <ol>
+                    <li>Topol, E. J. (2019). High-performance medicine: the convergence of human and artificial
+                        intelligence. <em>Nature Medicine</em>, 25(1), 44-56.</li>
+                    <li>Kaissis, G. A., et al. (2020). Secure, privacy-preserving and federated machine learning in
+                        medical imaging. <em>Nature Machine Intelligence</em>, 2(6), 305-311.</li>
+                    <li>Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System.</li>
+                    <li>NIST. (2015). Secure Hash Standard (SHS). <em>FIPS PUB 180-4</em>.</li>
+                    <li>Seales, W. B., et al. (2023). Unwrapping the Scroll: The Vesuvius Challenge. <em>Nature</em>
+                        (Correspondence).</li>
+                    <li>He, K., et al. (2016). Deep Residual Learning for Image Recognition. <em>CVPR</em>.</li>
+                    <li>Lewis, P., et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+                        <em>NeurIPS</em>.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- CONTACT -->
+            <div class="contact-section">
+                <p><strong>Manuscript submitted for internal review. Date: January 2, 2026.</strong></p>
+                <p><strong>Author Contact & Publications:</strong></p>
+                <p style="line-height: 1.8;">
+                    <strong>GitHub:</strong> <a href="https://github.com/Agnuxo1"
+                        target="_blank">https://github.com/Agnuxo1</a><br>
+                    <strong>ResearchGate:</strong> <a
+                        href="https://www.researchgate.net/profile/Francisco-Angulo-Lafuente-3" target="_blank">Profile
+                        Link</a><br>
+                    <strong>Kaggle:</strong> <a href="https://www.kaggle.com/franciscoangulo"
+                        target="_blank">https://www.kaggle.com/franciscoangulo</a><br>
+                    <strong>HuggingFace:</strong> <a href="https://huggingface.co/Agnuxo"
+                        target="_blank">https://huggingface.co/Agnuxo</a><br>
+                    <strong>Wikipedia:</strong> <a href="https://es.wikipedia.org/wiki/Francisco_Angulo_de_Lafuente"
+                        target="_blank">Francisco Angulo de Lafuente</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

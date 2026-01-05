@@ -1,0 +1,18 @@
+# Datasets
+V4/data/
+**/data/
+
+# Model Checkpoints
+*.pth
+**/results/models/
+**/results/attention_cache/
+
+# System Files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# IDE Files
+.vscode/
+.idea/
